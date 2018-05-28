@@ -20,7 +20,7 @@
       if (location == "CJ") {
           regisNum = reg;
       }
-      return regNums
+      return regisNum;
     }
     return {
       checkReg,
