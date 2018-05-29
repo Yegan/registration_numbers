@@ -9,7 +9,7 @@
         }
       }
       if (location == "CA") {
-        regisNum = reg;
+        regisNum = "CA"+reg;
       }
       if (location == "CK") {
           regisNum = reg;

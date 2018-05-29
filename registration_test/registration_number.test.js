@@ -3,7 +3,7 @@ describe("The registration function should take in registration number and displ
 
     var registration_display= RegistartionFactory();
 
-    assert.equal(registration_display.checkReg("CA", "CK123456"), "CA123456")
+    assert.equal(registration_display.checkReg("CA","123456"), "CA123456")
 
   });
 });
