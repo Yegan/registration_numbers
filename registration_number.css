@@ -5,3 +5,10 @@
   width: 50%;
   border:3px solid green;
 }
+.displayText ul{
+  padding-left: 1em;
+  background-color: yellow;
+  width: 20%;
+  border-radius: 15%;
+  border: solid black 2px;
+}
