@@ -31,13 +31,15 @@
       var list = Object.keys(registrationMap);
       var regNumbersFromTown = [];
 
+      if (town === "All"){
+        return list
+      }
+      
       // loop over all your reg numbers
       for (var i = 0; i < list.length; i++) {
         var regNumber = list[i];
         // look for the ones starting with town - keep them in a list
-        if (town === "All"){
-          return list
-          }
+
           if (regNumber.startsWith(town)) {
             // return regList;
             regNumbersFromTown.push(regNumber);
