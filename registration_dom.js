@@ -29,10 +29,10 @@ addButton.addEventListener("click", function() {
     localStorage.setItem('key', JSON.stringify(factory.regMap()));
     window.location.reload();
   }
-  // input needs to check for numbers only, and if input does not contain numerical values then print message
-  if (inputFeed != isValid) {
+  if(inputFeed != isValid) {
     return message.innerHTML = "Please enter a valid registration number"
   }
+  // input needs to check for numbers only, and if input does not contain numerical values then print message
 });
 
 select.addEventListener('click', function() {
@@ -41,9 +41,9 @@ select.addEventListener('click', function() {
   showRegNumbers(regNumbersToDisplay);
   if (regNumbersToDisplay) {
     return city;
+    window.location.reload();
 
   }
-  window.location.reload();
 
 
   // life happily ever after...
