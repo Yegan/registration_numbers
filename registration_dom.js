@@ -30,9 +30,9 @@ addButton.addEventListener("click", function() {
     window.location.reload();
   }
   if(inputFeed != isValid) {
-    return message.innerHTML = "Please enter a valid registration number"
+     message.innerHTML = "Please enter a valid registration number"
   }
-  // input needs to check for numbers only, and if input does not contain numerical values then print message
+
 });
 
 select.addEventListener('click', function() {
