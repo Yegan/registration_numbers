@@ -41,7 +41,9 @@ select.addEventListener('click', function() {
   showRegNumbers(regNumbersToDisplay);
   if (regNumbersToDisplay) {
     return city;
+
   }
+  window.location.reload();
 
 
   // life happily ever after...
