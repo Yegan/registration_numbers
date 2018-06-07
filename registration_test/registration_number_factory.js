@@ -2,6 +2,7 @@
     var registrationMap = {};
     var regisNum = "";
     var regPlates = ['CA', 'CY', 'CK', 'CAW', 'CJ']
+    var validReg = /[A-Z]+ [0-9].*-[0-9]*|[A-Z]+ [0-9].*/;
     // This functions parameter takes in an object
     if (storage) {
       registrationMap = storage;
@@ -10,10 +11,12 @@
 
     function checkReg(reg) {
       if (reg !== "") {
-        regisNum = reg;
+        regisNum = reg.toUpperCase();
+
 
         for (var i = 0; i < regPlates.length; i++) {
           if (regisNum.startsWith(regPlates[i])) {
+            if(regisNum.match(validReg)){
 
             if (registrationMap[regisNum] === undefined) {
               registrationMap[regisNum] = 0;
@@ -25,6 +28,7 @@
         return false
 
       }
+      }
     }
 
     function filter(town) {
@@ -34,7 +38,7 @@
       if (town === "All"){
         return list
       }
-      
+
       // loop over all your reg numbers
       for (var i = 0; i < list.length; i++) {
         var regNumber = list[i];
