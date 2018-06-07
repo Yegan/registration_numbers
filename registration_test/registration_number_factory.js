@@ -25,11 +25,13 @@
           }
 
         }
-        return false
 
       }
+      return false
       }
-    }
+      }
+
+
 
     function filter(town) {
       var list = Object.keys(registrationMap);
