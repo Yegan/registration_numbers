@@ -33,8 +33,8 @@
 
 
 
-    function filter(town) {
-      var list = Object.keys(registrationMap);
+    function filter(town, list) {
+      list = Object.keys(registrationMap);
       var regNumbersFromTown = [];
 
       if (town === "All"){
