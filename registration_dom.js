@@ -29,8 +29,11 @@ addButton.addEventListener("click", function() {
     localStorage.setItem('key', JSON.stringify(factory.regMap()));
     window.location.reload();
   }
-  if(inputFeed != isValid) {
-     message.innerHTML = "Please enter a valid registration number"
+  else{
+    if(inputFeed != isValid) {
+      message.innerHTML = "Please enter a valid registration number"
+    }
+
   }
 
 });
